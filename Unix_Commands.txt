@@ -1,0 +1,45 @@
+du -sh
+
+du -sh
+
+Find a file
+-----------
+find . -type f -name *.jar
+find . -name norkom
+
+GREP 
+----
+grep -i STAGE2SC4445 *
+
+
+Search and replace
+-------------------
+:%s/old-text/new-text/g
+
+Secure copy
+-----------
+scp -rf cberkmans@hyper94.cal.paypal.com:/x/local/cberkmans/githome/AAXXX.zip .
+
+IO 
+--
+netstat -o -n -a -p | grep 11001
+
+ 
+netstat -o -n -a -p | grep 11001
+ 
+netstat -o -n -a | grep 11001
+  
+KILL
+----  
+kill -9 <PID>  
+
+
+
+sed -i 's/good/bad/g' sed_sample.txt
+
+sed -i 's/enable_wallet_cache = false/enable_wallet_cache = true/g' fimanagementserv_ca.txt
+
+
+nohup myprogram </dev/null >myprogram.log 2>&1 &
+
+nohup ./myprogram > foo.out 2> foo.err < /dev/null &
