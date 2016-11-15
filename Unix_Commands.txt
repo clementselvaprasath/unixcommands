@@ -43,3 +43,13 @@ sed -i 's/enable_wallet_cache = false/enable_wallet_cache = true/g' fimanagement
 nohup myprogram </dev/null >myprogram.log 2>&1 &
 
 nohup ./myprogram > foo.out 2> foo.err < /dev/null &
+
+CDB command
+-----------
+cdbmake3 LIVE/filifecycleserv/config/filifecycleserv.cdb LIVE/filifecycleserv/config/filifecycleserv.txt
+cdbdump < LIVE/filifecycleserv/config/filifecycleserv.cdb | grep couchbaseserv_host
+
+
+CPU usage
+---------
+top
